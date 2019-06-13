@@ -13,6 +13,7 @@ supposed to reach public trackers.
 [download 3.7 here][3]
 
 There is also a premade [config][4] for those of us that run cli/headless Based off of this [list][5] from ngosang
+
 Besides manually creating the default tracker list, you can also load it (periodically) from a URL.
 
 ## Installation
