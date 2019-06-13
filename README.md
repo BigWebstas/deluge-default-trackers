@@ -36,6 +36,6 @@ To get Deluge's output on Windows, run this in a terminal ("cmd" works):
 * WebUI version
 
 [1]: http://deluge-torrent.org/
-[2]: https://github.com/BigWebstas/deluge-default-trackers/blob/master/egg/DefaultTrackers-0.1-py2.7.egg
-[3]: https://github.com/BigWebstas/deluge-default-trackers/blob/master/egg/DefaultTrackers-0.1-py3.7.egg
+[2]: https://github.com/BigWebstas/deluge-default-trackers/blob/master/egg/DefaultTrackers-0.1-py2.7.egg?raw=true
+[3]: https://github.com/BigWebstas/deluge-default-trackers/blob/master/egg/DefaultTrackers-0.1-py3.7.egg?raw=true
 
