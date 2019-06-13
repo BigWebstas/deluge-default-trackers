@@ -109,7 +109,7 @@ class OptionsDialog():
                 if not self.in_store(url):
                     self.gtkui.store.append([url])
                     self.gtkui.trackers.append({"url": url})
-        except Exception, err:
+        except Exception as err:
             dialogs.ErrorDialog("Error", str(err), self.dialog).run()
 
     def generate_opts(self):
@@ -127,7 +127,7 @@ class OptionsDialog():
             options = self.generate_opts()
             self.gtkui.store[self.item_id][0] = options["urls"][0]
             self.gtkui.trackers[self.item_index]["url"] = options["urls"][0]
-        except Exception, err:
+        except Exception as err:
             dialogs.ErrorDialog("Error", str(err), self.dialog).run()
 
     def on_cancel(self, widget):
