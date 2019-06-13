@@ -1,12 +1,15 @@
 ## Description
-
-This is a [Deluge][1] plugin that allows you to create a list of default trackers
+Updated to Python3.7
+This is a updated fork of the [Deluge][1] plugin that allows you to create a list of default trackers
 that will be added to new public torrents (and old ones after restarting Deluge). The
 plugin will not duplicate existing trackers and does not care how the torrent
 was added so it works perfectly fine with infohashes.
 
 Private torrents are excluded on purpose, because their metadata is not
 supposed to reach public trackers.
+
+download 2.7 here [2]
+download 3.7 here [3]
 
 Besides manually creating the default tracker list, you can also load it (periodically) from a URL.
 
@@ -16,7 +19,7 @@ Besides manually creating the default tracker list, you can also load it (period
 
     `python setup.py bdist_egg`
 
-(or try to use [the one from the "egg" directory][2] - be careful to install the py2.7 version of Deluge, if you're using Windows)
+(or try to use [the one from the "egg" directory][2] - be careful to install the py2.7 or py3.7 version of Deluge, if you're using Windows)
 
 * add it to Deluge from Preferences -> Plugins -> Install Plugin
 
@@ -32,5 +35,6 @@ To get Deluge's output on Windows, run this in a terminal ("cmd" works):
 * WebUI version
 
 [1]: http://deluge-torrent.org/
-[2]: https://github.com/stefantalpalaru/deluge-default-trackers/raw/master/egg/DefaultTrackers-0.1-py2.7.egg
+[2]: https://github.com/BigWebstas/deluge-default-trackers/blob/master/egg/DefaultTrackers-0.1-py2.7.egg
+[3]: https://github.com/BigWebstas/deluge-default-trackers/blob/master/egg/DefaultTrackers-0.1-py3.7.egg
 
