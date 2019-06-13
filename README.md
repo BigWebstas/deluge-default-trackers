@@ -12,6 +12,7 @@ supposed to reach public trackers.
 
 [download 3.7 here][3]
 
+There is also a premade [config][4] for those of us that run cli/headless Based off of this [list][5] from ngosang
 Besides manually creating the default tracker list, you can also load it (periodically) from a URL.
 
 ## Installation
@@ -39,4 +40,5 @@ To get Deluge's output on Windows, run this in a terminal ("cmd" works):
 [2]: https://github.com/BigWebstas/deluge-default-trackers/blob/master/egg/DefaultTrackers-0.1-py2.7.egg?raw=true
 [3]: https://github.com/BigWebstas/deluge-default-trackers/blob/master/egg/DefaultTrackers-0.1-py3.7.egg?raw=true
 [4]: https://github.com/BigWebstas/deluge-default-trackers/tree/master/egg
+[5]: https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all_ip.txt
 
