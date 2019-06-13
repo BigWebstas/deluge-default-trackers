@@ -8,9 +8,9 @@ was added so it works perfectly fine with infohashes.
 Private torrents are excluded on purpose, because their metadata is not
 supposed to reach public trackers.
 
-download 2.7 here [2]
+[download 2.7 here][2]
 
-download 3.7 here [3]
+[download 3.7 here][3]
 
 Besides manually creating the default tracker list, you can also load it (periodically) from a URL.
 
