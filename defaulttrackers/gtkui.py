@@ -47,7 +47,7 @@ import deluge.component as component
 from deluge.ui.gtkui import dialogs
 #from pprint import pprint
 
-from common import get_resource
+from .common import get_resource
 
 log = logging.getLogger(__name__)
 

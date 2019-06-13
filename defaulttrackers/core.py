@@ -44,7 +44,7 @@ import re
 import ssl
 import time
 import traceback
-import urllib2
+import urllib.request, urllib.error, urllib.parse
 
 from deluge.common import is_url
 from deluge.core.rpcserver import export
@@ -94,12 +94,12 @@ class Core(CorePluginBase):
                             'Accept-Language': 'en-US,en;q=0.8',
                             }
 
-                    req = urllib2.Request(self.config["dynamic_trackerlist_url"], headers=headers)
+                    req = urllib.request.Request(self.config["dynamic_trackerlist_url"], headers=headers)
                     try:
-                        page = urllib2.urlopen(req, context=ssl._create_unverified_context()).read()
+                        page = urllib.request.urlopen(req, context=ssl._create_unverified_context()).read()
                     except:
                         # maybe an older Python version without a "context" argument
-                        page = urllib2.urlopen(req).read()
+                        page = urllib.request.urlopen(req).read()
                     new_trackers = [url for url in re.findall(r'\w+://[\w\-.:/]+', page) if is_url(url)]
                     if new_trackers:
                         # replace all existing trackers
@@ -133,7 +133,7 @@ class Core(CorePluginBase):
     @export
     def set_config(self, config):
         """Sets the config dictionary"""
-        for key in config.keys():
+        for key in list(config.keys()):
             self.config[key] = config[key]
         self.config.save()
 
